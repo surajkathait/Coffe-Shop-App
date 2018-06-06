@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".submit"
+    android:background="@drawable/wk">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="10dp"
+        android:text="Coffee Shop"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="80dp"
+        android:textSize="24sp"
+        android:id="@+id/name" />
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:hint="Enter Your Name"
+        />
+
+    <TextView
+        android:id="@+id/quant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentStart="true"
+        android:text="Quantity"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:layout_marginTop="199dp"
+        android:layout_marginLeft="100dp"
+        android:inputType="number"
+        android:id="@+id/enter_quant" />
+    <TextView
+        android:id="@+id/capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentStart="true"
+        android:text="Capacity"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/capacity"
+        android:layout_marginTop="300dp">
+
+
+        <RadioButton
+            android:id="@+id/radio_250"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250"/>
+
+        <RadioButton
+            android:id="@+id/radio_350"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="350"/>
+
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>
